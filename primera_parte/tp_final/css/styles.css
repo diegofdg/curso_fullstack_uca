@@ -61,47 +61,39 @@ button {
 /**************/
 
 .navbar {
-    position: relative;
-    height: auto;
-    width: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    background-color: var(--marron);
+    width: 100%;
+    height: 6rem;
     padding-top: 0;
 }
 
 .navbar-burger {
-    position: absolute;
-    top: -2px;
-    right: 7rem;
-    display: grid;
-    place-items: center;
-    width: 64px;
-    height: 64px;
+    display: block;
     padding: 0;
 }
 
 .material-icons {
-    font-size: 5rem;
-    padding: 0 4.2rem;
     margin-top: 0;
+    padding: 0 .9rem 0 0;
+    font-size: 5rem;
     color: var(--blanco);
 }
 
 .navbar-background {
     width: 100%;
-    background-color: var(--marron);
-    height: 6rem;
 }
 
 .navbar-titulo {
+    display: block;
+    padding: 1.5rem 0 0 1rem;
     color: var(--blanco);
-    position: absolute;
-    top: 1.6rem;
-    left: 5rem;
-    display: grid;
     font-family: 'Krub', sans-serif;
     font-size: 2.5rem;    
     width: 30rem;
     height: 34px;
-    padding: 0;    
 }
 
 .navbar-menu {    
@@ -117,9 +109,9 @@ button {
     padding: 3rem 1.6rem 4rem;
 }
 
-/***************/
-/*** Sobre mi***/
-/***************/
+/****************/
+/*** Sobre mi ***/
+/****************/
 
 .sobre_mi {
     margin-top: 6.5rem;
@@ -184,6 +176,11 @@ button {
 /*********************/
 
 @media (min-width: 992px) {
+    .navbar {
+        background-color: unset;
+        height: 0;
+    }
+
     .navbar-burger {
         display: none;
     }
