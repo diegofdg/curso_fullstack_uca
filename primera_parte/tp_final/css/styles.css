@@ -171,6 +171,62 @@ button {
     background-color: var(--marron);
 }
 
+/*****************/
+/*** Educación ***/
+/*****************/
+
+.educacion-titulo {
+    margin-top: 9rem;
+    margin-bottom: 4.8rem;
+    font-size: 5rem;
+    color: var(--negro);
+    text-transform: uppercase;
+}
+
+.educacion-contenido {
+    display: flex;
+    justify-content:space-between;
+}
+
+.educacion-contenido-titulo {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.educacion-contenido-subtitulo {
+    margin-top: .8rem;
+    margin-bottom: 1.6rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--gris);
+    text-transform: uppercase;
+}
+
+.educacion-contenido-texto {
+    margin-bottom: 1rem;
+    font-family: 'Krub', sans-serif;
+    font-size: 1.6rem;
+    color: var(--gris);
+    line-height: 1.5;
+}
+
+.educacion-contenido-texto {
+    text-decoration: none;
+}
+
+.educacion-contenido-texto span {
+    color: var(--marron);
+    font-weight: 800;
+}
+
+.educacion-contenido-secundario {
+    font-family: 'Krub', sans-serif;    
+    font-size: 1.8rem;
+    flex-shrink: 0;
+    color: var(--marron);
+}
+
 /*********************/
 /*** Media Queries ***/
 /*********************/
