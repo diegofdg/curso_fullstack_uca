@@ -1,15 +1,20 @@
+/***************/
 /*** Colores ***/
+/***************/
 
 :root {
     --blanco: #FFFFFF;
     --gris: #6c757d;
+    --grisOscuro: #495057;
     --negro: #343a40;
     --marron: #bd5d38;
     --marronClaro: #eb9d7f;
     --marronOscuro: #88452b;
 }
 
+/****************/
 /*** Globales ***/
+/****************/
 
 html {
     font-size: 62.5%;
@@ -25,6 +30,13 @@ html {
     margin: 0;
 }
 
+body {
+    font-size: 1.6rem;    
+    font-family: 'Saira Extra Condensed', sans-serif;    
+    color: var(--negro);
+    background: var(--marron);
+}
+
 button {
     border: 0;
     padding: 0;
@@ -32,7 +44,21 @@ button {
     cursor: pointer;
 }
 
+.body {    
+    margin: 0 auto;    
+    display: flex;
+    flex-direction: column;
+}
+
+.separador {
+    opacity: .25;
+    margin-top: 4.8rem;
+    margin-bottom: 4.8rem;
+}
+
+/**************/
 /*** Navbar ***/
+/**************/
 
 .navbar {
     position: relative;
@@ -81,6 +107,81 @@ button {
 .navbar-menu {    
     display: none;
 }
+
+/************/
+/*** Main ***/
+/************/
+
+.main {
+    background-color: var(--blanco);
+    padding: 3rem 1.6rem 4rem;
+}
+
+/***************/
+/*** Sobre mi***/
+/***************/
+
+.sobre_mi {
+    margin-top: 6.5rem;
+}
+
+.sobre_mi-titulo {
+    color: var(--negro);
+    font-size: 9.6rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.sobre_mi-titulo span {
+    color: var(--marron);
+    letter-spacing: 0.2rem;
+}
+
+.sobre_mi-subtitulo {
+    color: var(--gris);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 4.8rem;
+}
+
+.sobre_mi-subtitulo a {
+    color: var(--marron);  
+    text-transform: lowercase;  
+}
+
+.sobre_mi-texto {
+    color: var(--gris);
+    font-family: 'Krub', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.sobre_mi-iconos {
+    margin-top: 4.8rem;
+}
+
+.sobre_mi-icono {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    margin-top: 4.8rem;
+    height: 6rem;
+    width: 6rem;
+    color: var(--blanco);
+    background-color: var(--grisOscuro);
+    border-radius: 100%;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.sobre_mi-icono:hover {
+    background-color: var(--marron);
+}
+
+/*********************/
+/*** Media Queries ***/
+/*********************/
 
 @media (min-width: 992px) {
     .navbar-burger {
@@ -153,5 +254,15 @@ button {
     
     .navbar-menu > a.active {
         color: var(--blanco);
+    }
+
+    .body {
+        flex-direction: row;
+    }
+
+    .main {
+        flex: 3;
+        margin-left: 27rem;
+        padding: 1rem 4.8rem;
     }
 }
