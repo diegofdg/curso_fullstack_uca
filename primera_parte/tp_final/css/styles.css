@@ -1,0 +1,26 @@
+/*** Colores ***/
+
+:root {
+    --blanco: #FFFFFF;
+    --gris: #6c757d;
+    --negro: #343a40;
+    --marron: #bd5d38;
+    --marronClaro: #eb9d7f;
+    --marronOscuro: #88452b;
+}
+
+/*** Globales ***/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
