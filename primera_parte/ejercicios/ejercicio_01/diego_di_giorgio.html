@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ejercicio 1" />
+    <meta property="og:description" content="Resolución del Ejercicio 1" />
+    <meta name="twitter:title" content="Ejercicio 1">
+    <meta name="twitter:description" content="Resolución del Ejercicio 1">
+    <meta name="description" content="Resolución del Ejercicio 1">
+    <link rel="icon" type="image/x-icon" href="https://www.w3schools.com/favicon.ico">
+    <title>Ejercicio 1</title>
+    <style>
+      body {
+        background-color: gainsboro;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ejercicio Nº 1</h1>
+    <!-- <section>
+        <h2>Enunciado del ejercicio</h2>
+        <p>Desarrollar un formulario HTML que contenga, al menos:</p>
+        <ol>
+            <li>Nombre y apellido</li>
+            <li>Fecha de nacimiento</li>
+            <li>E-mail</li>
+            <li>Teléfono</li>
+            <li>Preferencias (Comidas, música, otros)</li>
+            <li>Campo que permita el ingreso de comentarios</li>
+            <li>Indicar como obligatorios aquellos campos que considere necesario para el 
+                envío del mismo</li>
+        </ol>
+        <h2>Entrega</h2>
+        <p>La entrega debe subirse a la plataforma con el siguiente formato: nombreyapellido.html</p>
+    </section> -->
+    <section>
+      <form action="/action_page.php">
+        <fieldset>
+          <legend>Información personal</legend>
+          <p>
+            Nombre y Apellido:
+            <input type="text" name="nombre_y_apellido" required />
+          </p>
+          <p>
+            Fecha de Nacimiento:
+            <input type="date" name="fecha_de_nacimiento" required />
+          </p>
+          <p>
+            E-mail:
+            <input type="email" name="email" required />
+          </p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Información adicional</legend>
+          <label for="vehiculos">Medio de transporte preferido:</label>
+          <select name="vehiculos" id="vehiculos">
+            <option value="" selected disabled>--Seleccione--</option>
+            <option value="bicicleta">Bicicleta</option>
+            <option value="moto">Moto</option>
+            <option value="auto">Auto</option>
+            <option value="colectivo">Colectivo</option>
+            <option value="subte">Subte</option>
+            <option value="tren">Tren</option>
+            <option value="avion">Avión</option>
+            <option value="ninguno">No tengo preferencia</option>
+          </select>
+          <p>
+            Preferencias de comidas: (puede seleccionar más de una opción)<br />
+            <input type="checkbox" id="comida1" name="comida1" value="Pizzas" />
+            <label for="comida1">Me gustan las pizzas</label><br />
+            <input type="checkbox" id="comida2" name="comida2" value="Milanesas" />
+            <label for="comida2">Me gustan las milanesas</label><br />
+            <input type="checkbox" id="comida3" name="comida3" value="Pastas" />
+            <label for="comida3">Me gustan las pastas</label><br />
+            <input type="checkbox" id="comida4" name="comida4" value="Asado" />
+            <label for="comida4">Me gusta el asado</label><br />
+            <input type="checkbox" id="comida5" name="comida5" value="Ninguna" />
+            <label for="comida5">Ninguna de las opciones anteriores</label><br />
+          </p>
+          <p>
+            Preferencias de música: (solo elija una opción)<br />
+            <input type="radio" id="musica1" name="musica" value="Rock" />
+            <label for="musica1">Me gusta el rock</label><br />
+            <input type="radio" id="musica2" name="musica" value="Pop" />
+            <label for="musica2">Me gusta el pop</label><br />
+            <input type="radio" id="musica3" name="musica" value="Clasica" />
+            <label for="musica3">Me gusta la música clásica</label><br />
+            <input type="radio" id="musica4" name="musica" value="Reggaeton" />
+            <label for="musica4">Me gusta el reggaeton</label><br />
+            <input type="radio" id="musica5" name="musica" value="Ninguna" />
+            <label for="musica5">Ninguna de las opciones anteriores</label><br />
+          </p>
+          <p>
+            Escriba su comentario aquí:<br />
+            <textarea name="comentario" id="comentario1" cols="60" rows="5" required></textarea>
+          </p>
+        </fieldset>
+        <br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+  </body>
+</html>

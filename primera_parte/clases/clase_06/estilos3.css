@@ -1,0 +1,42 @@
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+a::after {
+    content: " Este contenido fue agregado desde CSS ";
+}
+
+.input:focus {
+    border: 5px solid green;
+}
+
+.texto_roboto {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 35px;
+}
+
+.otra_tipografia {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+.subrayado {
+    text-decoration: underline;
+}

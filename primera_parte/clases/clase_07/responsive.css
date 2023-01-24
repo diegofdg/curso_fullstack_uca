@@ -1,0 +1,14 @@
+body {
+    background-color: lightgreen;
+  }
+  
+.parrafo {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 22px;
+    color: blue;
+}
+
+h1 {
+    font-size: 40px;
+}

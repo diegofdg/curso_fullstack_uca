@@ -1,0 +1,52 @@
+body {
+    background-color: gainsboro;
+    color: darkblue;
+}
+
+.titulo {    
+    padding-bottom: 15px;
+    text-decoration: underline;
+}
+
+.caja_principal {
+    padding: 10px;
+}
+
+.caja_noticias {
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+.imagen_paginas {
+    max-width: 150px;
+    padding-right: 20px;
+}
+
+.link_paginas:visited {
+    color:rgba(116, 4, 4, 0.651);
+}
+
+.link_paginas:hover {
+    font-weight: bold;
+    color: rgb(5, 104, 5);
+}
+
+.texto_footer {
+    font-size: 20px;  
+    font-style: italic;  
+    font-weight: bold;
+}
+
+.link_red_social {
+    /* esto es para eliminar el guión del link */
+    color: gainsboro;
+}
+
+.icono_red_social {
+    color: darkblue;
+    font-size: 35px;
+    padding-right: 10px;
+    padding-left: 10px;
+}

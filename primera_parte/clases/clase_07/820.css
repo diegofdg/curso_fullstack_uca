@@ -1,0 +1,10 @@
+@media only screen and (max-width: 820px) {
+    body {
+      background-color:beige;
+    }
+  
+    h1 {
+        font-size: 25px;
+    }
+
+  }

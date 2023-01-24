@@ -1,0 +1,71 @@
+
+* {
+    margin: 10px;
+}
+
+body {
+    background-color: blue;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/* La siguiente regla aplica a todos los elementos
+h2 que aparezcan en el documento HTML */
+h2, h3, h4, h5, h6 {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+/** Referenciamos a traves del ID  
+declarado en el documento HTML */
+#titulo1 {
+    color: green;
+    border: 1px solid yellow;
+}
+
+#titulo2 {
+    color: orange;
+    border: 1px solid black;
+}
+
+#h6 {
+    color:lawngreen !important;
+    margin: 50px;
+}
+
+#portada {
+    background-color: black;
+    font-size: 30px;
+    font-weight: bold;
+    border: 3px dashed #FF0000;
+    padding: 30px;
+}
+
+/** Definimos la clase: titulo_generico*/
+.titulo_generico_h2 {
+    color: grey;
+}
+
+.titulo_generico_h3 {
+    color: yellow;
+}
+
+.titulo_generico_p {
+    color: grey;
+}
+
+section p {
+    width: 300px;
+    background-color: black;
+    color: white;
+}
+
+section > h1 {
+    color: red;
+    background-color: yellow;
+    height: 250%;
+    width: 100%;
+}

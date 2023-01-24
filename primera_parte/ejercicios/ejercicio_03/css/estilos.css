@@ -1,0 +1,61 @@
+body {
+  background-color: gainsboro;
+  color: darkblue;    
+  font-family: 'Alexandria', sans-serif;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+label, input, button, p {
+  display: block;
+  margin-top: 20px;
+  font-size: 20px;    
+}
+
+.oculto {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.error {
+  color: red;
+}
+
+.exito {
+  color: green;
+}
+
+.error,
+.exito,
+.footer span {
+  font-weight: bold;
+}
+
+#btn_calcular {
+  background-color: darkblue;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+#btn_calcular:hover {
+  background-color: rgb(49, 49, 153);
+}
+
+.footer {
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+}
+  
+.footer .corazon {  
+  color: red;
+  font-weight: bold;
+}
