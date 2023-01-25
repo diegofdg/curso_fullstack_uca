@@ -52,6 +52,10 @@ li {
     list-style-type: none
 }
 
+fieldset {
+    margin: 1rem 0;
+}
+
 .body {    
     margin: 0 auto;    
     display: flex;
@@ -217,11 +221,13 @@ li {
 /***  Educación  ***/
 /*** Experiencia ***/
 /***   Skills    ***/
+/***  Contacto   ***/
 /*******************/
 
 .educacion-titulo,
 .experiencia-titulo,
-.skills-titulo {
+.skills-titulo,
+.contacto-titulo {
     margin-top: 9rem;
     margin-bottom: 4.8rem;
     font-size: 5rem;
@@ -229,11 +235,19 @@ li {
     text-transform: uppercase;
 }
 
+.contacto-titulo {
+    margin-bottom: 0;
+}
+
 .educacion-contenido,
 .experiencia-contenido {
     display: flex;
     flex-direction: column;
     justify-content:space-between;
+}
+
+.contacto-contenido {
+    width: 100%;
 }
 
 .educacion-contenido-principal,
@@ -260,6 +274,14 @@ li {
     text-transform: uppercase;
 }
 
+.contacto-contenido-subtitulo {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 2.5rem;
+    color: var(--gris);
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .educacion-contenido-texto,
 .experiencia-contenido-texto {
     margin-bottom: 1rem;
@@ -283,6 +305,53 @@ li {
     color: var(--marron);
 }
 
+.formulario {
+    font-family: 'Krub', sans-serif;
+    margin: 1rem 0;   
+    padding-top: .5rem; 
+}
+
+.formulario fieldset {
+    border: solid 1px var(--marron);
+}
+
+.campo {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+.input-text {
+    width: 100%;
+    margin-bottom: 1.5rem; 
+    padding: .5rem;   
+    border: solid 1px var(--marron);
+}
+
+.campo textarea{
+    height: 20rem;
+    margin-bottom: 0;
+}
+
+.boton {
+    width: 100%;
+    padding: 1rem;   
+    background-color: var(--marron);
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    font-weight: bold;    
+    color: var(--blanco);    
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.boton:hover {
+    background-color: var(--marronOscuro);
+    cursor: pointer;
+}
+
 /*********************/
 /*** Media Queries ***/
 /*********************/
@@ -291,6 +360,10 @@ li {
     .educacion-contenido,
     .experiencia-contenido {
         flex-direction: row;
+    }
+
+    .contacto-contenido {
+        width: 90%;
     }
 }
 
@@ -379,5 +452,9 @@ li {
     .main {
         margin-left: 27rem;
         padding: 1rem 4.8rem;
+    }
+
+    .contacto-contenido {
+        width: 80%;
     }
 }
