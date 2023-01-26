@@ -19,7 +19,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@400;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 
     <!-- Librería de íconos de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -34,19 +33,20 @@
 <body class="body">
     <!-- Navbar -->
     <nav class="navbar">
-        <button type="button" class="navbar-burger">
-            <span class="material-icons">menu</span>
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+            <img class="navbar-burger-icon" src="./img/hamburger-icon.svg" alt="icono menu">
         </button>
             <div class="navbar-background">
                 <span class="navbar-titulo">Diego Di Giorgio</span>
-          </div>
+            </div>
         <nav class="navbar-menu">
             <img src="./img/profile-photo.jpg" alt="profile foto">
-            <a href="#sobre_mi" class="active">Sobre Mí</a>
-            <a href="#experiencia">Experiencia</a>
-            <a href="#educacion">Educación</a>
-            <a href="#skills">Skills</a>
-            <a href="#contacto">Contacto</a>
+            <a id="sobre_mi_menu" href="#sobre_mi" class="active">Sobre Mí</a>
+            <a id="experiencia_menu" href="#experiencia">Experiencia</a>
+            <a id="educacion_menu" href="#educacion">Educación</a>
+            <a id="skills_menu" href="#skills">Skills</a>
+            <a id="contacto_menu" href="#contacto">Contacto</a>
         </nav>
     </nav>
     <!-- Fin Navbar -->
@@ -100,7 +100,7 @@
                     <p>Marzo 2017</p>
                 </div>
             </div>
-            <hr class="separador">
+
             <div class="educacion-contenido">
                 <div class="educacion-contenido-principal">
                     <h3 class="educacion-contenido-titulo">Contador Público</h3>

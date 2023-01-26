@@ -19,6 +19,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -64,8 +65,7 @@ fieldset {
 
 .separador {
     opacity: .25;
-    margin-top: 4.8rem;
-    margin-bottom: 4.8rem;
+    margin-top: 6.9rem;
 }
 
 /**************/
@@ -78,8 +78,21 @@ fieldset {
     position: fixed;
     background-color: var(--marron);
     width: 100%;
-    height: 6rem;
+    height: 5.6rem;
     padding-top: 0;
+    z-index: 1;
+}
+
+.navbar-overlay {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
 }
 
 .navbar-burger {
@@ -87,7 +100,7 @@ fieldset {
     padding: 0;
 }
 
-.material-icons {
+.navbar-burger-icon {
     margin-top: 0;
     padding: 0 .9rem 0 0;
     font-size: 5rem;
@@ -112,6 +125,68 @@ fieldset {
     display: none;
 }
 
+.navbar-menu > a:hover {
+     opacity: 0.8;
+}
+ 
+.navbar-menu > a.active {
+     color: var(--blanco);
+     opacity: unset;
+}
+
+body.open .navbar-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+body.open .navbar-titulo {
+    display: none;
+}
+
+body.open .navbar-menu img {
+    display: none;
+}
+body.open .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 27rem;
+    height: 100%;
+    margin-top: 0;
+    padding: 2rem;
+    visibility: visible;
+    translate: 0 0;
+    background: var(--marron);
+}
+
+body.open .navbar-menu > a {
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    background: transparent;
+    padding: .8rem 0;
+    font-family: 'Krub', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+  
+body.open .navbar-menu > a:hover {
+    opacity: 0.8;
+}
+
+body.open .navbar-menu > a.active {
+    color: var(--blanco);
+}
+
 /************/
 /*** Main ***/
 /************/
@@ -127,7 +202,7 @@ fieldset {
 /****************/
 
 .sobre_mi {
-    margin-top: 6.5rem;
+    padding-top: 8.5rem;
 }
 
 .sobre_mi-titulo {
@@ -178,7 +253,7 @@ fieldset {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-right: 1.5rem;
+    margin-right: 2.4rem;
     border-radius: 100%;
 }
 
@@ -224,11 +299,17 @@ fieldset {
 /***  Contacto   ***/
 /*******************/
 
+.educacion,
+.experiencia,
+.skills,
+.contacto {
+    padding-top: 8.3rem;
+    
+}
 .educacion-titulo,
 .experiencia-titulo,
 .skills-titulo,
 .contacto-titulo {
-    margin-top: 9rem;
     margin-bottom: 4.8rem;
     font-size: 5rem;
     color: var(--negro);
@@ -237,6 +318,10 @@ fieldset {
 
 .contacto-titulo {
     margin-bottom: 0;
+}
+
+.educacion-contenido {
+    margin-bottom: 4.2rem;
 }
 
 .educacion-contenido,
@@ -266,7 +351,7 @@ fieldset {
 .educacion-contenido-subtitulo,
 .experiencia-contenido-subtitulo,
 .skills-contenido-subtitulo {
-    margin-top: .8rem;
+    margin-top: .3rem;
     margin-bottom: 1.6rem;
     font-size: 2.5rem;
     font-weight: 400;
@@ -424,9 +509,9 @@ fieldset {
 
     .navbar-menu > a {
         display: block;
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 0.6);
         background: transparent;
-        padding: .8rem 0;
+        padding: .65rem 0;
         font-family: 'Krub', sans-serif;
         font-size: 1.6rem;
         font-weight: 700;
@@ -438,7 +523,7 @@ fieldset {
     }
       
     .navbar-menu > a:hover {
-        opacity: 0.8;
+        color: rgba(255, 255, 255, 1);
     }
     
     .navbar-menu > a.active {
