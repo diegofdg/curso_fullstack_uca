@@ -437,6 +437,31 @@ body.open .navbar-menu > a.active {
     cursor: pointer;
 }
 
+/***************************/
+/***  Mensajes de error  ***/
+/***     y de éxito      ***/
+/***************************/
+
+.error {
+    font-size: 1.8rem;    
+    margin: 1rem auto;
+    color: red;
+    text-align: center; 
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+}
+
+.exito {
+    font-size: 1.8rem;    
+    margin: 1rem auto;
+    color: green;
+    text-align: center; 
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+}
+
 /*********************/
 /*** Media Queries ***/
 /*********************/
