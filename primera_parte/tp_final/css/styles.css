@@ -102,7 +102,7 @@ fieldset {
 
 .navbar-burger-icon {
     margin-top: 0;
-    padding: 0 .9rem 0 0;
+    padding: 0 1.6rem 0 0;
     font-size: 5rem;
     color: var(--blanco);
 }
@@ -113,7 +113,7 @@ fieldset {
 
 .navbar-titulo {
     display: block;
-    padding: 1.5rem 0 0 1rem;
+    padding: 1.5rem 0 0 1.6rem;
     color: var(--blanco);
     font-family: 'Krub', sans-serif;
     font-size: 2.5rem;    
@@ -131,6 +131,7 @@ fieldset {
  
 .navbar-menu > a.active {
      color: var(--blanco);
+     font-size: 2rem;
      opacity: unset;
 }
 
@@ -185,6 +186,7 @@ body.open .navbar-menu > a:hover {
 
 body.open .navbar-menu > a.active {
     color: var(--blanco);
+    font-size: 2rem;
 }
 
 /************/
@@ -320,6 +322,7 @@ body.open .navbar-menu > a.active {
     margin-bottom: 0;
 }
 
+.experiencia-contenido,
 .educacion-contenido {
     margin-bottom: 4.2rem;
 }
